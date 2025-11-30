@@ -59,7 +59,7 @@ export default function AboutPage() {
             {advantageItems.map((advantage) => (
               <li
                 key={advantage.name}
-                className="h-30 w-30 sm:h-[250px] sm:w-auto flex flex-col items-center justify-center gap-3 sm:gap-5 bg-[#FAFAFA] rounded-md overflow-hidden"
+                className="h-30 w-30 sm:h-[250px] sm:w-auto flex flex-col items-center justify-center gap-3 sm:gap-5 bg-[#FAFAFA] hover:bg-accent text-accent hover:text-[#FAFAFA] rounded-md overflow-hidden transition-colors"
               >
                 <Icon name={advantage.icon} className="w-6 sm:w-16" />
                 <span className="font-medium text-xs sm:text-xl">

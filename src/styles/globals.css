@@ -18,6 +18,10 @@
   @apply max-w-7xl mx-auto px-5 md:px-4;
 }
 
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
+
 @utility quoted {
   display: inline-block;
   position: relative;
