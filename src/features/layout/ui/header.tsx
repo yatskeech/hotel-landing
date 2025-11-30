@@ -28,7 +28,7 @@ export function Header() {
               alt="logo"
               width={56}
               height={36}
-              className="w-[31px] md:w-[56px]"
+              className="w-[31px] md:w-14"
             />
           </Link>
           <span
