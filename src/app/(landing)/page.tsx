@@ -4,8 +4,8 @@ import { Button } from "@/shared/ui";
 
 export default function HomePage() {
   return (
-    <div className="container">
-      <main className="h-main flex justify-between items-center gap-32">
+    <div className="flex-1 flex container">
+      <div className="flex justify-between items-center gap-32">
         <div className="flex flex-col gap-20 items-start">
           <div className="flex flex-col gap-6 text-foreground">
             <span className="font-script font-semibold text-accent text-[50px]">
@@ -29,7 +29,7 @@ export default function HomePage() {
             className="w-full h-full object-cover"
           />
         </div>
-      </main>
+      </div>
     </div>
   );
 }

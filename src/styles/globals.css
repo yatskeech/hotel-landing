@@ -1,15 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --header-height: 120px;
   --accent-color: #7c6a46;
   --background: #ffffff;
   --foreground: #1c1c1c;
 }
 
 @theme inline {
-  --spacing-header: var(--header-height);
-  --spacing-main: calc(100vh - var(--spacing-header));
   --color-accent: var(--accent-color);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -18,9 +15,7 @@
 }
 
 @utility container {
-  max-width: 1280px;
-  margin-inline: auto;
-  padding-inline: 16px;
+  @apply max-w-7xl mx-auto px-5 md:px-4;
 }
 
 @utility quoted {

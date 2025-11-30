@@ -18,7 +18,11 @@ const button = cva("transition-all", {
       ],
     },
     disabled: {
-      false: ["cursor-pointer", "hover:opacity-80", "active:scale-98"],
+      false: [
+        "cursor-pointer",
+        "hover:drop-shadow-[0_8px_4px_rgba(124,106,70,0.4)]",
+        "active:bg-[#524939]",
+      ],
       true: ["opacity-50", "cursor-not-allowed"],
     },
   },
