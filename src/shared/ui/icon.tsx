@@ -102,12 +102,12 @@ const Icons = {
       <path
         d="M0.597656 0.501953L14.4983 14.5019"
         stroke="white"
-        stroke-linecap="round"
+        strokeLinecap="round"
       />
       <path
         d="M0.498291 14.5017L14.3989 0.501794"
         stroke="white"
-        stroke-linecap="round"
+        strokeLinecap="round"
       />
     </svg>
   ),

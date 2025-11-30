@@ -9,6 +9,7 @@ import { Button } from "@/shared/ui";
 
 import { navItems } from "../model/constants";
 import { BurgerMenu } from "./burger-menu";
+import { ModalForm } from "./modal-form";
 
 export function Header() {
   const pathname = usePathname();
@@ -53,7 +54,9 @@ export function Header() {
                 ))}
               </ul>
             </nav>
-            <Button>Request a call</Button>
+            <ModalForm>
+              <Button>Request a call</Button>
+            </ModalForm>
           </div>
         </header>
       </div>

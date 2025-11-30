@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { ModalForm } from "@/features/layout";
 import { Button } from "@/shared/ui";
 
 export default function ContactPage() {
@@ -63,7 +64,9 @@ export default function ContactPage() {
             </div>
           </li>
         </ul>
-        <Button className="md:hidden mt-6">Request</Button>
+        <ModalForm>
+          <Button className="md:hidden mt-6">Request</Button>
+        </ModalForm>
       </div>
     </div>
   );
