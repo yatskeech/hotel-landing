@@ -14,9 +14,9 @@ export default function HomePage() {
             <h1 className="w-[400px] font-bold text-[55px] leading-none">
               Hotel for every moment rich in emotion
             </h1>
-            <p className="max-w-[260px] font-medium">
+            <span className="max-w-[260px] font-medium">
               Every moment feels like the first time in paradise view
-            </p>
+            </span>
           </div>
           <Button>Book Now</Button>
         </div>
