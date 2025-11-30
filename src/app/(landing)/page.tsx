@@ -20,7 +20,7 @@ export default function HomePage() {
           </div>
           <Button>Book Now</Button>
         </div>
-        <div className="w-full max-h-120 lg:w-auto lg:max-h-none lg:h-full lg:max-w-[745px]">
+        <div className="w-full h-[220px] sm:h-[400px] lg:w-auto lg:max-h-none lg:h-full lg:max-w-[745px]">
           <Image
             src="/hotel.jpg"
             alt="hotel"
