@@ -36,7 +36,7 @@ const advantages = [
 
 export default function AboutPage() {
   return (
-    <main className="w-full flex flex-col">
+    <div className="w-full flex flex-col">
       <div className="flex h-[180px] sm:h-[400px] md:h-[700px] overflow-hidden bg-[url(/about.jpg)] bg-cover bg-center">
         <div className="flex-1 flex flex-col gap-12 items-center justify-center text-white bg-[#7C6A4680]">
           <h1 className="hidden md:block font-extrabold text-6xl">About us</h1>
@@ -103,6 +103,6 @@ export default function AboutPage() {
           </ul>
         </section>
       </div>
-    </main>
+    </div>
   );
 }
