@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 const button = cva("transition-all", {
   variants: {
     intent: {
-      primary: ["bg-[#7C6A46]", "text-white"],
+      primary: ["bg-accent", "text-white"],
     },
     size: {
       small: [
