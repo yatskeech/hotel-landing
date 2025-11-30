@@ -89,6 +89,28 @@ const Icons = {
       />
     </svg>
   ),
+  open: (props: SVGProps<SVGSVGElement>) => (
+    <svg width="24" height="16" viewBox="0 0 24 16" fill="none" {...props}>
+      <path
+        d="M0 0H23.6842V2.63014H0V0ZM0 6.57534H23.6842V9.20548H0V6.57534ZM0 13.1507H23.6842V15.7808H0V13.1507Z"
+        fill="#7C6A46"
+      />
+    </svg>
+  ),
+  close: (props: SVGProps<SVGSVGElement>) => (
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" {...props}>
+      <path
+        d="M0.597656 0.501953L14.4983 14.5019"
+        stroke="white"
+        stroke-linecap="round"
+      />
+      <path
+        d="M0.498291 14.5017L14.3989 0.501794"
+        stroke="white"
+        stroke-linecap="round"
+      />
+    </svg>
+  ),
 };
 
 type IconProps = SVGProps<SVGSVGElement> & { name: keyof typeof Icons };

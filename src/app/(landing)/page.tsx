@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { Button } from "@/shared/ui";
 
@@ -18,7 +19,9 @@ export default function HomePage() {
               {`Every moment feels like the first time\nin paradise view`}
             </span>
           </div>
-          <Button>Book Now</Button>
+          <Link href="/rooms">
+            <Button>Book Now</Button>
+          </Link>
         </div>
         <div className="w-full h-[220px] sm:h-[400px] lg:w-auto lg:max-h-none lg:h-full lg:max-w-[745px]">
           <Image

@@ -7,13 +7,8 @@ import { usePathname } from "next/navigation";
 
 import { Button } from "@/shared/ui";
 
-const navItems = [
-  { name: "Home", title: "Paradise View", href: "/" },
-  { name: "Reviews", title: "Reviews", href: "/reviews" },
-  { name: "Rooms", title: "Rooms", href: "/rooms" },
-  { name: "About", title: "About Us", href: "/about" },
-  { name: "Contact", title: "Contact Us", href: "/contact" },
-];
+import { navItems } from "../model/constants";
+import { BurgerMenu } from "./burger-menu";
 
 export function Header() {
   const pathname = usePathname();
@@ -39,7 +34,7 @@ export function Header() {
           >
             {navItems.find((item) => item.href === pathname)?.title}
           </span>
-          <span className="md:hidden">x</span>
+          <BurgerMenu />
           <div className="hidden md:flex items-center gap-15">
             <nav>
               <ul className="flex gap-8 lg:gap-12">
