@@ -2,6 +2,7 @@
 
 import { cx } from "class-variance-authority";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 import { Icon } from "@/shared/ui";
@@ -9,6 +10,7 @@ import { Icon } from "@/shared/ui";
 import { navItems } from "../model/constants";
 
 export function BurgerMenu() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -38,7 +40,9 @@ export function BurgerMenu() {
               <li key={name}>
                 <Link
                   href={href}
-                  className="font-bold text-white"
+                  className={cx("text-white", {
+                    "font-bold": pathname === href,
+                  })}
                   onClick={() => setIsOpen(false)}
                 >
                   {name}
